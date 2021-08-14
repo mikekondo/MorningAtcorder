@@ -8,5 +8,7 @@
 using namespace std;
 int main()
 {
+    cout << "pat" << endl;
+
     cout << "test" << endl;
 }
