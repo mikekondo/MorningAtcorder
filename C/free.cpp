@@ -10,25 +10,19 @@ int main()
 {
     int n;
     cin >> n;
-    vector<int> vec(n);
-    int count = 0;
-    for (int i = 0; i < n; i++)
-    {
-        cin >> vec[i];
-    }
-    map<long long, long long> mp;
-    for (int i = 0; i < n; i++)
-    {
-        mp[vec[i] % 200] += 1;
-    }
+    vector<int> a(n);
     long long sum = 0;
-    for (auto i = mp.begin(); i != mp.end(); i++)
+    for (int i = 0; i < n; i++)
     {
-        long long n = i->second;
-        if (n >= 2)
+        cin >> a[i];
+    }
+    for (int i = 1; i < n; i++)
+    {
+        for (int j = 0; j <= i - 1; j++)
         {
-            long long combination = (n * (n - 1)) / 2;
-            sum += combination;
+            long long element = a[i] - a[j];
+            element = pow(element, 2);
+            sum += element;
         }
     }
     cout << sum << endl;
