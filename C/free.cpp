@@ -8,22 +8,28 @@
 using namespace std;
 int main()
 {
-    int n;
+    long long n;
     cin >> n;
-    vector<int> a(n);
-    long long sum = 0;
-    for (int i = 0; i < n; i++)
+    long long ans = 1;
+    vector<string> s;
+    s.push_back("A");
+    for (int i = 1; i < 120; i++)
     {
-        cin >> a[i];
-    }
-    for (int i = 1; i < n; i++)
-    {
-        for (int j = 0; j <= i - 1; j++)
+        ans *= 2;
+        if (ans >= n)
         {
-            long long element = a[i] - a[j];
-            element = pow(element, 2);
-            sum += element;
+            ans /= 2;
+            for (int i = ans; i < n; i++)
+            {
+                s.push_back("A");
+            }
+            return 0;
         }
+        s.push_back("B");
     }
-    cout << sum << endl;
+    cout << s.size() << endl;
+    for (int i = 0; i < s.size(); i++)
+    {
+        cout << s[i] << endl;
+    }
 }
