@@ -19,4 +19,10 @@
 → コンビネーション問題 (n\*n-1)/2
 
 215.cpp
-→ 　 next_permutation:順列問題
+→ next_permutation:順列問題
+
+160.cpp
+→ 　円形の最短移動問題
+
+162.cpp
+→ 　 3 つの最大公約数の和
