@@ -8,28 +8,30 @@
 using namespace std;
 int main()
 {
-    long long n;
-    cin >> n;
-    long long ans = 1;
-    vector<string> s;
-    s.push_back("A");
-    for (int i = 1; i < 120; i++)
+    string s;
+    cin >> s;
+    int ans = 0;
+    for (int num = 0; num < 10000; num++)
     {
-        ans *= 2;
-        if (ans >= n)
+        vector<int> a(10);
+        int x = num;
+        for (int i = 0; i < 4; i++)
         {
-            ans /= 2;
-            for (int i = ans; i < n; i++)
-            {
-                s.push_back("A");
-            }
-            return 0;
+            int d = x % 10;
+            a[d] = 1;
+            x /= 10;
         }
-        s.push_back("B");
+        bool ok = true;
+        for (int i = 0; i < 10; i++)
+        {
+            if (s[i] == 'o' && a[i] != 1)
+                ok = false;
+            if (s[i] == 'x' && a[i] != 0)
+                ok = false;
+        }
+        if (ok)
+            ++ans;
     }
-    cout << s.size() << endl;
-    for (int i = 0; i < s.size(); i++)
-    {
-        cout << s[i] << endl;
-    }
+    cout << ans << endl;
+    return 0;
 }
