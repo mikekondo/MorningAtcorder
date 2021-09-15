@@ -17,5 +17,6 @@ int main()
     for (int i = 0; i < 26; i++)
     {
         cout << (char)('a' + vec[i] - 1);
+        cout << " " << endl;
     }
 }
