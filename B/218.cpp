@@ -13,11 +13,10 @@ int main()
     {
         cin >> vec[i];
     }
-    vector<string> vecS(26);
     for (int i = 0; i < 26; i++)
     {
-        cout << (char)('a' + vec[i] - 1);
-        cout << " " << endl;
-        cout << " " << endl;
+        string ans;
+        ans = (char)('a' + vec[i] - 1);
+        cout << ans;
     }
 }

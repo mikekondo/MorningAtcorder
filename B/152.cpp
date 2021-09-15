@@ -12,22 +12,17 @@ int main()
     cin >> a >> b;
     string A;
     string B;
-    char _a = '0' + a;
-    char _b = '0' + b;
+    vector<string> vec;
     for (int i = 0; i < b; i++)
     {
-        A += _a;
+        A += (char)('0' + a);
     }
     for (int i = 0; i < a; i++)
     {
-        B += _b;
+        B += (char)('0' + b);
     }
-    if (A >= B)
-    {
-        cout << B << endl;
-    }
-    else if (A <= B)
-    {
-        cout << A << endl;
-    }
+    vec.push_back(A);
+    vec.push_back(B);
+    sort(vec.begin(), vec.end());
+    cout << vec[0] << endl;
 }
