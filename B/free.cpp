@@ -8,16 +8,13 @@
 using namespace std;
 int main()
 {
-    vector<int> vec;
-    for (int i = 0; i < 26; i++)
-    {
-        int n;
-        cin >> n;
-        vec.push_back(n);
-    }
-    for (int i = 0; i < 26; i++)
-    {
-        char s = (char)('a' + vec[i] - 1);
-        cout << s;
-    }
+    string a;
+    char g = 'd';
+    char f = '0' + 6;
+    a += "1";
+    a += "2";
+    a += g;
+    a += f;
+    cout << f << endl;
+    cout << a << endl;
 }
