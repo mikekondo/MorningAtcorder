@@ -18,5 +18,6 @@ int main()
     {
         cout << (char)('a' + vec[i] - 1);
         cout << " " << endl;
+        cout << " " << endl;
     }
 }
