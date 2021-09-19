@@ -12,11 +12,7 @@ int main()
     for (int i = 0; i < 26; i++)
     {
         cin >> vec[i];
-    }
-    for (int i = 0; i < 26; i++)
-    {
-        string ans;
-        ans = (char)('a' + vec[i] - 1);
-        cout << ans;
+        char a = (char)('a' + vec[i] - 1);
+        cout << a;
     }
 }
