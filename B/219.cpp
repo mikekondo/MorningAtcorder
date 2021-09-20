@@ -8,19 +8,18 @@
 using namespace std;
 int main()
 {
-    vector<string> vecS(3);
+    vector<string> vec(3);
     for (int i = 0; i < 3; i++)
     {
-        cin >> vecS[i];
+        cin >> vec[i];
     }
     string t;
-    string ans;
     cin >> t;
     for (int i = 0; i < t.size(); i++)
     {
-        int index = (int)(t[i]);
-        index -= 49;
-        ans += vecS[index];
+        int henkan = (int)(t[i]);
+        // cout << henkan << endl;
+        henkan -= 49;
+        cout << vec[henkan];
     }
-    cout << ans << endl;
 }
