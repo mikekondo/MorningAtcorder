@@ -74,7 +74,7 @@ A×B+C=N の A,B,C は何通りか？3 重ループを 1 ループに変更<br>
 
 ## secret.cpp
 
-3 の倍数と 3 がつく数の和<br>
+3 の倍数と 3 がつく数の和-ofstream_ver<br>
 
 ## 220.cpp/B 問題
 
