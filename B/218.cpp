@@ -8,11 +8,10 @@
 using namespace std;
 int main()
 {
-    vector<int> vec(26);
+    vector<int> p(26);
     for (int i = 0; i < 26; i++)
     {
-        cin >> vec[i];
-        char a = (char)('a' + vec[i] - 1);
-        cout << a;
+        cin >> p[i];
+        cout << char(p[i] - 1 + 'a');
     }
 }
