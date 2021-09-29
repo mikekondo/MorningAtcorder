@@ -10,19 +10,22 @@ int main()
 {
     int a, b;
     cin >> a >> b;
-    string A;
-    string B;
-    vector<string> vecs;
-    for (int i = 0; i < a; i++)
-    {
-        B += (char)('0' + b);
-    }
+    string a_b;
+    string b_a;
     for (int i = 0; i < b; i++)
     {
-        A += (char)('0' + a);
+        a_b += to_string(a);
     }
-    vecs.push_back(B);
-    vecs.push_back(A);
-    sort(vecs.begin(), vecs.end());
-    cout << vecs[0] << endl;
+    for (int i = 0; i < a; i++)
+    {
+        b_a += to_string(b);
+    }
+    if (a_b >= b_a)
+    {
+        cout << b_a << endl;
+    }
+    else
+    {
+        cout << a_b << endl;
+    }
 }
