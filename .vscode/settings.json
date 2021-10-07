@@ -2,6 +2,7 @@
   "files.associations": {
     "algorithm": "cpp",
     "ostream": "cpp",
-    "bitset": "cpp"
+    "bitset": "cpp",
+    "vector": "cpp"
   }
 }
