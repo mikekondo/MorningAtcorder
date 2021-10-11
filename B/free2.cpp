@@ -12,7 +12,5 @@
 using namespace std;
 int main()
 {
-    string s;
-    cin >> s;
-    string s_batch = s;
+    cout << "mike" << endl;
 }
