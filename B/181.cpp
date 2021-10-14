@@ -14,13 +14,13 @@ int main()
 {
     int n;
     cin >> n;
-    long long sum = 0;
-    for (int i = 0; i < n; i++)
+    long long ans = 0;
+    for (long long i = 0; i < n; i++)
     {
-        int a;
-        int b;
+        long long a, b;
         cin >> a >> b;
-        sum += (a + b) * (b - a + 1) / 2;
+        ans += b * (b + 1) / 2 - a * (a - 1) / 2;
     }
-    cout << sum << endl;
+    cout << ans << endl;
+    return 0;
 }

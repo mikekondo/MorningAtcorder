@@ -1,18 +1,10 @@
 #include <iostream>
 #include <vector>
-#include <map>
-#include <string>
 #include <algorithm>
-#include <cmath>
-#include <bitset>
-#include <fstream>
-#include <numeric>
-#include <iomanip>
-#include <limits>
+#include </Users/m.kondo/opt/homebrew/include/eigen3/Eigen/Core>
 using namespace std;
-int main()
+int main(int argc, char *argv[])
 {
-    string s;
-    cin >> s;
-    string s_batch = s;
+    //Eigen::Matrix3d mat;
+    cout << "mikekondo" << endl;
 }

@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/Users/m.kondo/MorningAtcorder/tesst/build",
+  "command": "/usr/bin/clang++ -I/Users/m.kondo/opt/homebrew/include/eigen3 -isystem /Users/m.kondo/opt/homebrew/Cellar/opencv/4.5.3_2/include/opencv4 -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o CMakeFiles/test2.dir/test2.cpp.o -c /Users/m.kondo/MorningAtcorder/tesst/test2.cpp",
+  "file": "/Users/m.kondo/MorningAtcorder/tesst/test2.cpp"
+},
+{
+  "directory": "/Users/m.kondo/MorningAtcorder/tesst/build",
+  "command": "/usr/bin/clang++ -I/Users/m.kondo/opt/homebrew/include/eigen3 -isystem /Users/m.kondo/opt/homebrew/Cellar/opencv/4.5.3_2/include/opencv4 -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o CMakeFiles/test1.dir/test1.cpp.o -c /Users/m.kondo/MorningAtcorder/tesst/test1.cpp",
+  "file": "/Users/m.kondo/MorningAtcorder/tesst/test1.cpp"
+}
+]

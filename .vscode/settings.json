@@ -3,6 +3,9 @@
     "algorithm": "cpp",
     "ostream": "cpp",
     "bitset": "cpp",
-    "vector": "cpp"
-  }
+    "vector": "cpp",
+    "string": "cpp",
+    "iostream": "cpp"
+  },
+  "C_Cpp.errorSquiggles": "Enabled"
 }
